@@ -1,6 +1,7 @@
 # 19CS301-Module10
 ###EX: 10.a  STACK
-### Aim: To Write a python program to get the integer values from the user and push only the odd number into the stack and later pop the last 2 elements
+### Aim: 
+To Write a python program to get the integer values from the user and push only the odd number into the stack and later pop the last 2 elements
 ### Algorithm:
 STEP 1: Start.
 
@@ -36,7 +37,8 @@ for i in range(2):
 
 
 ### EX: 10.2 IMPLEMENTATION OF STACK
-### Aim: To Write a python program to implement the stack using deque method for rotating the stack.
+### Aim: 
+To Write a python program to implement the stack using deque method for rotating the stack.
 ### Algorithm:
 
 STEP 1: Start.
@@ -66,14 +68,15 @@ def fun(n):
 print(f"Stack after rotation {stack}")
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/f42c4ec6-578c-418a-8f66-cf70abe7dc54)
+![image](https://github.com/23013357/19CS301-Module10/blob/main/e.png)
 
 ### Result: Thus, the given program is implemented and executed successfully .
  
 
 
 EX: 10.3 QUEUE
-### Aim: To Write a python program to implement the stack using deque method for rotating the stack.
+### Aim: 
+To Write a python program to implement the stack using deque method for rotating the stack.
 ### Algorithm:
 
 STEP 1: Start.
@@ -108,7 +111,8 @@ print(stack)
 
 
 ### EX: 10.4 IMPLEMENTATION OF QUEUE
-### Aim: To Develop a python program to get the 4 integer values from user and display the values using multiprocessing library
+### Aim: 
+To Develop a python program to get the 4 integer values from user and display the values using multiprocessing library
 ### Algorithm:
 
 STEP 1: Start.
@@ -135,6 +139,49 @@ for i in range(4):
 ```
 ### Output:
  ![image](https://github.com/user-attachments/assets/26a380ff-118e-43f4-8178-83a5417262b5)
+ 
+
+### Result: Thus, the given program is implemented and executed successfully .
+
+### EX: 10.5 MUTIPROCESSING OF QUEUE
+### Aim: 
+To  python program to display the colors and the number of colors the user provided using multiprocessing library
+### Algorithm:
+
+Start.
+
+Take n as input for the number of colors.
+
+Append n colors entered by the user into the list colors.
+
+Initialize a queue and add each color to the queue, incrementing the counter cnt.
+
+Print the counter cnt (number of colors).
+
+Retrieve and print each color from the queue.
+
+Stop.
+### Program:
+```
+
+from multiprocessing import Queue
+
+colors=[]
+cnt=0
+queue=Queue()
+n=int(input())
+colours=[]
+for i in range(n):
+    colors.append(input())
+for color in colors:
+    queue.put(color)
+    cnt+=1
+print('count-',cnt)
+for i in range(n):
+    print(queue.get())
+```
+### Output:
+ ![image](https://github.com/23013357/19CS301-Module10/blob/main/MODUL%2010.png)
  
 
 ### Result: Thus, the given program is implemented and executed successfully .
